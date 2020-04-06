@@ -11,8 +11,8 @@ const AboutPage = () => (
     <h2>A propos</h2>
     <p>Cette application utilise : </p>
     <ul>
-      {stack.map(item => (
-        <li>{item}</li>
+      {stack.map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
     </ul>
   </div>
